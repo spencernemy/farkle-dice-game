@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farkle Game</title>
+    <link rel="stylesheet" href="styles/general.css"/>
+    <link rel="stylesheet" href="styles/styles.css"/>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="game-container">
+            <div id="initial-screen">
+                <h1>Farkle Game</h1>
+                <div id="player-amt-select">
+                    <h2>How many players?</h2>
+                    <button class="menu-button" id="two-players">2</button>
+                    <button class="menu-button" id="three-players">3</button>
+                    <button class="menu-button" id="four-players">4</button>
+                </div>
+                <div id="player-name-form" hidden>
+                    <p id="player-name-label">Enter Player 1 Name:</p>
+                    <input type="text" id="player-name-input" required>
+                    <button type="submit" class="menu-button" id="next">Next</button>
+                </div>
+            </div>
+            <div id="game-screen" hidden>
+                <h1>Farkle Game</h1>
+                <div class="dice-grid">
+                    <button class="dice" id="die1"></button>
+                    <button class="dice" id="die2"></button>
+                    <button class="dice" id="die3"></button>
+                    <button class="dice" id="die4"></button>
+                    <button class="dice" id="die5"></button>
+                    <button class="dice" id="die6"></button>
+                </div>
+                <p>Instructions: On your turn, roll dice, and select<br>each one you would like to keep.<br>You must keep at least one new die each turn.</p>
+                <div class="button-grid">
+                    <button class="menu-button" id="roll">Roll Dice</button>
+                    <button class="menu-button" id="claim" disabled>Claim Points</button>
+                    <button class="menu-button" id="end-turn" disabled>End Turn</button>
+                    <!--<button class="menu-button" id="reset">Reset</button>-->
+                </div>
+                <div class="score-grid">
+                    <p id="current-player"></p>
+                    <p id="current-round-score"></p>
+                    <p id="score"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scoreboard">
+            <h3>Scoreboard</h3>
+            <p class="player-scores" id="player1-score"></p>
+            <p class="player-scores" id="player2-score"></p>
+            <p class="player-scores" id="player3-score" hidden></p>
+            <p class="player-scores" id="player4-score" hidden></p>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

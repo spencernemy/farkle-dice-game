@@ -1,0 +1,114 @@
+.main-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#player-name-form {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#initial-screen[hidden], #player-amt-select[hidden], #player-name-form[hidden], #game-screen[hidden] {
+    display: none;
+}
+
+.game-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    height: 300px;
+    width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.scoreboard {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(285px, -50%);
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    height: 330px;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-button {
+    background-color: rgb(181, 227, 255);
+    height: 40px;
+    width: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.1s;
+}
+
+.menu-button:hover {
+    opacity: 0.5;
+}
+
+.menu-button:disabled:hover {
+    opacity: 1;
+    cursor: default;
+}
+
+.dice-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.dice {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.dice:hover {
+    outline: 3px solid rgb(181, 227, 255);
+}
+
+.dice.selected {
+    outline: solid green;
+}
+
+.dice.kept {
+    outline: solid red;
+}
+
+.score-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-right: 35px;
+}
+
+.popup-message {
+    position: absolute;
+    top: 25%;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.popup-message.hide {
+    opacity: 0;
+}
+
+#score {
+    margin-bottom: 0;
+}
+
+#claim {
+    width: 110px;
+}

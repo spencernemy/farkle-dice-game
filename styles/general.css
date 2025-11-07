@@ -1,0 +1,26 @@
+body {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+button {
+    border: none;
+    font-size: medium;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    font-size: 18px;
+    width: 170px;
+}
