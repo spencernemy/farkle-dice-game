@@ -25,11 +25,26 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.scoring-guide {
+    position: absolute;
+    transform: translate(-225px);
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    height: 330px;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+#scoring-guide-title {
+    margin-bottom: 0px;
+}
+#scoring-guide-text {
+    margin-top: 5px;
+}
+
 .scoreboard {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(285px, -50%);
+    transform: translate(555px);
     background-color: white;
     padding: 5px;
     border-radius: 20px;
